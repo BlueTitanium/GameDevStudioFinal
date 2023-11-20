@@ -42,6 +42,7 @@
     {"id":{"name":"obj_player_beat","path":"objects/obj_player_beat/obj_player_beat.yy",},},
     {"id":{"name":"obj_right_beat","path":"objects/obj_right_beat/obj_right_beat.yy",},},
     {"id":{"name":"spr_music_note","path":"sprites/spr_music_note/spr_music_note.yy",},},
+    {"id":{"name":"fnt_medium","path":"fonts/fnt_medium/fnt_medium.yy",},},
     {"id":{"name":"obj_enemy_beat","path":"objects/obj_enemy_beat/obj_enemy_beat.yy",},},
     {"id":{"name":"obj_beat","path":"objects/obj_beat/obj_beat.yy",},},
     {"id":{"name":"Gimme_Kick1","path":"sounds/Gimme_Kick1/Gimme_Kick1.yy",},},

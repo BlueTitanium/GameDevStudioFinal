@@ -18,6 +18,12 @@ if(beat_time_left < reaction_allowed and reaction_time_left <= 0){
 
 if(reaction_time_left > 0){
 	reaction_time_left-=1;	
+} else {
+	if(obj_player.can_move == true && (cur_beat != " " && cur_beat != "0")){
+		show_debug_message(string(cur_beat));
+		miss_beat();		
+	}
+	cur_beat = " ";	
 }
 
 

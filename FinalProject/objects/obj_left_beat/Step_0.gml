@@ -5,7 +5,7 @@ x+=beat_controller.bar_speed;
 
 if(is_player and obj_player_beat.x - x < beat_controller.bar_speed*beat_controller.reaction_allowed){
 	image_blend = #00FFFF;
-	
+	beat_controller.cur_beat = beat;
 }
 
 if(obj_player_beat.x - x < beat_controller.bar_speed){
