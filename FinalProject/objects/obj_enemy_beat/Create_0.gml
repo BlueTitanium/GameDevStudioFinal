@@ -18,7 +18,9 @@ function spawnNextBeat(){
 	var next_beat_e = string_char_at(enemy_pattern,beat_controller.cur_index);
 	var next_beat_p = string_char_at(player_pattern,beat_controller.cur_index);
 	beat_controller.cur_index++;
-	
+	if(beat_controller.cur_index>=len){
+		beat_controller.cur_index = 0;	
+	}
 	var _left_pos = x - beat_controller.beat_timer * beat_controller.beat_spacer;
 	var _right_pos = x + beat_controller.beat_timer * beat_controller.beat_spacer;
 	
