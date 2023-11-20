@@ -7,6 +7,4 @@ grid_pos_y = 0;
 
 can_move = false;
 
-
-
-
+scale = 1;

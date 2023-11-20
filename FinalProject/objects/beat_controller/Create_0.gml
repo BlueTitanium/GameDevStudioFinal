@@ -4,11 +4,17 @@ game_set_speed(60, gamespeed_fps);
 
 
 bpm = 120; //120 bpm
+beat_spacer = 20;
 beat_timer = 60/(bpm/60); //30 frames
-delay = -4;
+delay = 0;
 beat_time_left = beat_timer + delay;
 
-reaction_timer = 10;
+cur_index = 0; // to spawn
+cur_beat = " "; // to hit
+
+
+reaction_timer = 17;
+reaction_allowed=12;
 reaction_time_left = 0;
 
 bar_speed = 5;
