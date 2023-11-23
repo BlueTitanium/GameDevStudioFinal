@@ -34,5 +34,5 @@
     "path": "sprites/spr_music_note_e/spr_music_note_e.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

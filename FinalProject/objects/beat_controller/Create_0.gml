@@ -25,7 +25,7 @@ reaction_time_left = 0;
 
 bar_speed = 5;
 
-audio_play_sound(music_test,1,false,.3);
+audio_play_sound(music_test,1,true,.3);
 
 function hit_beat(){
 	num_correct++;
