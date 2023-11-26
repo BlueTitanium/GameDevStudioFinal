@@ -3,13 +3,13 @@
 
 is_player = false;
 beat = " ";
+attack = "0";
 
 function change_beat_type(type){
 	beat = type;
 	switch(type){
 		case " ":
 			sprite_index = noone;
-			
 			break;
 		case "0":
 			sprite_index = spr_beat;

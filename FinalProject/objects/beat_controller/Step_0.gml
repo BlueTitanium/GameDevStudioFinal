@@ -29,4 +29,11 @@ if(reaction_time_left > 0){
 
 
 
+if(keyboard_check_pressed(ord("R"))){
+	room_restart();	
+}
+
+
+
+
 

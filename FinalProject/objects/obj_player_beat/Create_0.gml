@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+x = room_width/2;
+show_debug_message(string(x));
 scale = 1;
 function spawnBeat(dist){
 	
