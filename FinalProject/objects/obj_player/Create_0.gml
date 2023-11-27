@@ -18,6 +18,11 @@ hp_bar_length = hp_bar_delta*2;
 hp_shown = hp_bar_start + hp_bar_length-11;
 
 function take_damage(_amount){
+	if(_amount>0){
+		obj_cam.DamageEffect();	
+	} else {
+		obj_cam.HealEffect();	
+	}
 	hp-=_amount;
 	if(hp <= 0){
 		hp = 0;	

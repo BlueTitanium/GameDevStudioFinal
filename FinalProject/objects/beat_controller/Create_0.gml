@@ -7,8 +7,9 @@ game_set_speed(60, gamespeed_fps);
 bpm = 120; //120 bpm
 beat_spacer = 11; // 11
 beat_timer = 60/(bpm/60); //30 frames
-delay = 0;
-beat_time_left = beat_timer + delay;
+
+
+beat_time_left = beat_timer;
 bar_speed = 5;
 
 beating_o_list = ds_list_create();
@@ -30,8 +31,10 @@ reaction_time_left = 0;
 
 
 audio_stop_all();
-audio_play_sound(music_test_205_peritune_epicbattledeity,1,true,.3);
-
+delay = 15;
+song = music_test_120;
+//audio_play_sound(music_test_120,1,true,.3);
+alarm[0] = delay;
 
 function hit_beat(){
 	num_correct++;

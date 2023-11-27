@@ -59,6 +59,7 @@
     {"id":{"name":"Gimme_Kick13","path":"sounds/Gimme_Kick13/Gimme_Kick13.yy",},},
     {"id":{"name":"Gimme_Kick7","path":"sounds/Gimme_Kick7/Gimme_Kick7.yy",},},
     {"id":{"name":"Gimme_Kick1","path":"sounds/Gimme_Kick1/Gimme_Kick1.yy",},},
+    {"id":{"name":"pt_Test","path":"particles/pt_Test/pt_Test.yy",},},
     {"id":{"name":"Gimme_Tom7","path":"sounds/Gimme_Tom7/Gimme_Tom7.yy",},},
     {"id":{"name":"obj_attack_spot_e","path":"objects/obj_attack_spot_e/obj_attack_spot_e.yy",},},
     {"id":{"name":"Gimme_Clap1","path":"sounds/Gimme_Clap1/Gimme_Clap1.yy",},},
