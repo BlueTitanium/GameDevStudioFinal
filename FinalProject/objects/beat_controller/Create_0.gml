@@ -4,7 +4,7 @@ randomize();
 game_set_speed(60, gamespeed_fps);
 
 
-bpm = 120; //120 bpm
+bpm = 205; //120 bpm
 beat_spacer = 11; // 11
 beat_timer = 60/(bpm/60); //30 frames
 
@@ -23,18 +23,20 @@ cur_index = 0; // to spawn
 cur_beat = " "; // to hit
 
 reaction_timer = 17;
-if(beat_timer > 30)
+reaction_allowed=12;
+if(beat_timer > 30){
 	reaction_timer = beat_timer/2 + 2; //17
+	reaction_allowed=reaction_timer-beat_timer/6; //17 - 30/6 = 12
+}
 
-reaction_allowed=reaction_timer-5;
 reaction_time_left = 0;
 
 
 audio_stop_all();
 delay = 15;
-song = music_test_120;
-//audio_play_sound(music_test_120,1,true,.3);
-alarm[0] = delay;
+song = music_test_205_peritune_epicbattledeity;
+audio_play_sound(song,1,true,.3);
+//alarm[0] = delay;
 
 function hit_beat(){
 	num_correct++;
