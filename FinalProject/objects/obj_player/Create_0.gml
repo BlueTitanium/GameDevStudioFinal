@@ -9,7 +9,7 @@ grid_pos_y = 0;
 
 can_move = false;
 
-hp = 10;
+hp = 1;
 max_hp = hp;
 
 hp_bar_delta = 320+16;
@@ -26,6 +26,8 @@ function take_damage(_amount){
 	hp-=_amount;
 	if(hp <= 0){
 		hp = 0;	
+		obj_screen_lose.show();
+		beat_controller.finished = true;
 	}
 	if(hp >=max_hp){
 		hp = max_hp;	

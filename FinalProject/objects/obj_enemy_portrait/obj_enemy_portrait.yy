@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_screen_win",
+  "name": "obj_enemy_portrait",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_screen_UI_popup",
-    "path": "objects/obj_screen_UI_popup/obj_screen_UI_popup.yy",
+    "name": "obj_actor",
+    "path": "objects/obj_actor/obj_actor.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_enemy_portrait",
+    "path": "sprites/spr_enemy_portrait/spr_enemy_portrait.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

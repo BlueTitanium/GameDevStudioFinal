@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
+//event_inherited();
 
 
 hp_shown = lerp(hp_shown, hp_bar_start + (hp_bar_length - 21)*(hp/max_hp) +10,.2);

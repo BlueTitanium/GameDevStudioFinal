@@ -4,7 +4,7 @@ randomize();
 game_set_speed(60, gamespeed_fps);
 
 
-bpm = 205; //120 bpm
+bpm = 120; //120 bpm
 beat_spacer = 11; // 11
 beat_timer = 60/(bpm/60); //30 frames
 
@@ -31,11 +31,12 @@ if(beat_timer > 30){
 
 reaction_time_left = 0;
 
+finished = false;
 
 audio_stop_all();
 delay = 15;
-song = music_test_205_peritune_epicbattledeity;
-audio_play_sound(song,1,true,.3);
+song = music_test_120;
+//audio_play_sound(song,1,true,.3);
 //alarm[0] = delay;
 
 function hit_beat(){

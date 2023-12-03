@@ -12,7 +12,7 @@ start_y = obj_player.start_y;
 x = start_x + 32*grid_pos_x;
 y = start_y + 32*grid_pos_y;
 
-hp = 50;
+hp = 1;
 max_hp = hp;
 
 hp_bar_delta = 320+16;
@@ -24,7 +24,8 @@ function take_damage(_amount){
 	hp -= _amount;
 	if(hp<=0){
 		hp = 0;
-		
+		obj_screen_win.show();
+		beat_controller.finished = true;
 	}
 }
 
