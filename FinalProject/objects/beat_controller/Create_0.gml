@@ -4,10 +4,11 @@ randomize();
 game_set_speed(60, gamespeed_fps);
 
 
-bpm = 120; //120 bpm
+bpm = global.bpm; //120 bpm
 beat_spacer = 11; // 11
 beat_timer = 60/(bpm/60); //30 frames
 
+global.lost = false;
 
 beat_time_left = beat_timer;
 bar_speed = 5;
@@ -35,8 +36,10 @@ finished = false;
 
 audio_stop_all();
 delay = 15;
-song = music_test_120;
-//audio_play_sound(song,1,true,.3);
+if(global.song!=noone){
+	song = global.song;
+	audio_play_sound(song,1,true,.3);
+}
 //alarm[0] = delay;
 
 function hit_beat(){

@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(keyboard_check_pressed(vk_escape)){
+	room_goto(START);	
+}
+
+
 //bounds should be -5, 5, 5 ,-5
 
 x = lerp(x,start_x + 32*grid_pos_x,.1);

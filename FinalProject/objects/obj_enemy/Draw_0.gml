@@ -19,4 +19,7 @@ draw_rectangle(hp_bar_start+10, 131+10,hp_shown, 207-10, false);
 
 draw_set_color(c_white);
 
-
+draw_set_font(fnt_small2);
+draw_set_halign(fa_center);
+draw_set_valign(fa_bottom);
+draw_text(room_width/2,120,global.title);

@@ -12,7 +12,7 @@ start_y = obj_player.start_y;
 x = start_x + 32*grid_pos_x;
 y = start_y + 32*grid_pos_y;
 
-hp = 1;
+hp = global.enemy_hp;
 max_hp = hp;
 
 hp_bar_delta = 320+16;

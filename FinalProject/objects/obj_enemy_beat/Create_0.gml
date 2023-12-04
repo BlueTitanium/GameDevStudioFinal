@@ -5,11 +5,9 @@ scale = 1;
 
 //pattern = 0 -> any, 1->up, 2->down, 3->left, 4->right, " " -> none
 enemy_pattern				
-= "0103020204040103";
+= global.enemy_pattern;
 enemy_pattern_attacks		
-= "0000000a0000000a"; 
-player_attack_spawn_pattern  
-= "s0s0s0s0s0s0s0s0"; //unused
+= global.enemy_attack_pattern; 
 player_pattern 
 = "00000000";
 

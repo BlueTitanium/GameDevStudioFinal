@@ -20,5 +20,14 @@ if(shown){
 	draw_set_font(fnt_small);
 	draw_text(room_width/2,room_height/2+50,"Press SPACE to continue");
 	draw_set_alpha(1);
+	if(alpha >.9 and keyboard_check_pressed(vk_space)){
+		global.lost = false;
+		audio_stop_all();
+		if(global.backToMenu){
+			room_goto(START);	
+		} else {
+			room_goto(Room2);
+		}
+	}
 }
 

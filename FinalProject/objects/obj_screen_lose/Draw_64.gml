@@ -19,6 +19,21 @@ if(shown){
 	draw_text(room_width/2,room_height/2,"YOU LOSE!");
 	draw_set_font(fnt_small);
 	draw_text(room_width/2,room_height/2+50,"Press 'R' to Restart");
+	
+	if(global.loseable){
+		draw_set_font(fnt_small);
+		draw_text(room_width/2,room_height/2+80,"Press SPACE to give up...");
+		draw_set_alpha(1);
+		if(alpha >.9 and keyboard_check_pressed(vk_space)){
+			audio_stop_all();
+			global.lost = true;
+			if(global.backToMenu){
+				room_goto(START);	
+			} else {
+				room_goto(Room2);
+			}
+		}
+	}
 	draw_set_alpha(1);
 }
 

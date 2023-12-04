@@ -5,7 +5,9 @@ x = lerp(x,start_x + 32*grid_pos_x,.1);
 y = lerp(y,start_y + 32*grid_pos_y,.1);
 
 
-
+if(keyboard_check_pressed(vk_backspace)){
+	take_damage(30)
+}
 
 
 
