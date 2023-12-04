@@ -17,6 +17,6 @@ function end_dialogue(){
 	StartBattle(0);
 	global.should_dia[dia_id][0] = false;
 	global.should_dia[dia_id][1] = true;
-	global.next_grid_pos = [obj_player_world.grid_pos_x-1,obj_player_world.grid_pos_y];
+	global.next_grid_pos = [obj_player_world.grid_pos_x,obj_player_world.grid_pos_y];
 	room_goto(Room1);
 }

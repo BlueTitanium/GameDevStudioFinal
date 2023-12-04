@@ -28,7 +28,8 @@ function StartBattle(char_id){
 			= "0141414422223232323313131311114424242000"; //heart
 			global.enemy_attack_pattern 
 			//= "bcbcbccbbbbcbcbcbccbcbcbcbbbbccbcbcb0000";
-			= "b0b0b0c0b0b0b0b0b0c0c0c0c0b0b0c0c0c00000";
+			//= "b0b0b0c0b0b0b0b0b0c0c0c0c0b0b0c0c0c00000";
+			= "b000b000b000b000b000c000c000b000c0000000";
 			global.song = music_test_205_peritune_epicbattledeity;
 			global.bpm = 205;
 			global.enemy_hp = 150;

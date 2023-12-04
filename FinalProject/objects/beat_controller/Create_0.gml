@@ -23,11 +23,11 @@ combo = 1;
 cur_index = 0; // to spawn
 cur_beat = " "; // to hit
 
-reaction_timer = 17;
-reaction_allowed=12;
+reaction_timer   = 17;
+reaction_allowed = 12;
 if(beat_timer > 30){
 	reaction_timer = beat_timer/2 + 2; //17
-	reaction_allowed=reaction_timer-beat_timer/6; //17 - 30/6 = 12
+	reaction_allowed=reaction_timer-floor(beat_timer/6); //17 - 30/6 = 12
 }
 
 reaction_time_left = 0;
@@ -50,10 +50,12 @@ function hit_beat(){
 }
 function miss_beat(){
 	
-	num_inputs++;
-	accuracy = num_correct/num_inputs;
-	audio_play_sound(Gimme_Perc23,1,false,1);
-	combo = 1;
+	if(obj_player.hp > 0 && obj_enemy.hp > 0){
+		num_inputs++;
+		accuracy = num_correct/num_inputs;
+		audio_play_sound(Gimme_Perc23,1,false,1);
+		combo = 1;
+	}
 }
 
 

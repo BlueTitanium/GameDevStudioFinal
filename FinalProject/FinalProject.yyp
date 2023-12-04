@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
@@ -45,6 +45,7 @@
     {"id":{"name":"obj_screen_UI_popup","path":"objects/obj_screen_UI_popup/obj_screen_UI_popup.yy",},},
     {"id":{"name":"spr_music_note_e","path":"sprites/spr_music_note_e/spr_music_note_e.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
     {"id":{"name":"oChar1Tutorial","path":"objects/oChar1Tutorial/oChar1Tutorial.yy",},},
     {"id":{"name":"spr_heal_spot","path":"sprites/spr_heal_spot/spr_heal_spot.yy",},},
     {"id":{"name":"spr_start_cutscene2","path":"sprites/spr_start_cutscene2/spr_start_cutscene2.yy",},},
@@ -122,6 +123,7 @@
     {"id":{"name":"spr_music_note_w","path":"sprites/spr_music_note_w/spr_music_note_w.yy",},},
     {"id":{"name":"oDialog2Start","path":"objects/oDialog2Start/oDialog2Start.yy",},},
     {"id":{"name":"Gimme_Perc23","path":"sounds/Gimme_Perc23/Gimme_Perc23.yy",},},
+    {"id":{"name":"spr_player_base","path":"sprites/spr_player_base/spr_player_base.yy",},},
     {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},},
     {"id":{"name":"oDialogParent","path":"objects/oDialogParent/oDialogParent.yy",},},
     {"id":{"name":"_obj_default_globals","path":"objects/_obj_default_globals/_obj_default_globals.yy",},},
@@ -139,7 +141,6 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"StartCutscene","path":"rooms/StartCutscene/StartCutscene.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
