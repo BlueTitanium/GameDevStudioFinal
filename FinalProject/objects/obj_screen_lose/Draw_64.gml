@@ -25,6 +25,7 @@ if(shown){
 		draw_text(room_width/2,room_height/2+80,"Press SPACE to give up...");
 		draw_set_alpha(1);
 		if(alpha >.9 and keyboard_check_pressed(vk_space)){
+			audio_play_sound(Gimme_Clap1,1,false,.4);
 			audio_stop_all();
 			global.lost = true;
 			if(global.backToMenu){

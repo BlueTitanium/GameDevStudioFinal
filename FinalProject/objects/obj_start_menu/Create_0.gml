@@ -9,7 +9,8 @@ global.room_song = music_test_100;
 audio_stop_all();
 audio_play_sound(global.room_song,1,false,.3);
 
-rm = Room2;
+rm = StartCutscene;
+//rm = Room2;
 
 alarm[0] = beat_timer;
 

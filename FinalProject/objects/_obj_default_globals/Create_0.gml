@@ -23,6 +23,7 @@ global.next_grid_pos = [0,0];
 global.enemy_pattern = "011033022022044044011033"; 
 ////pattern = a -> large 
 global.enemy_attack_pattern = "0000000a0000000a0000000a";
+global.powerups_allowed = [0];
 global.song = noone;
 global.bpm = 100;
 global.enemy_hp = 50;

@@ -31,6 +31,7 @@ if(!finished){
 
 if(keyboard_check_pressed(ord("R"))){
 	room_restart();	
+	audio_play_sound(Gimme_Clap1,1,false,.4);
 }
 
 

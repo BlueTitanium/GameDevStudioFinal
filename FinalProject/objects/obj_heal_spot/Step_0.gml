@@ -5,6 +5,9 @@
 event_inherited();
 
 if(can_touch && obj_player.grid_pos_x == grid_pos_x && obj_player.grid_pos_y == grid_pos_y){
+	if(obj_player.hp < obj_player.max_hp/2){
+		obj_player.take_damage(-1);
+	}
 	obj_player.take_damage(-amt);
 	audio_play_sound(Gimme_Snap1,1,false,.4);
 	beat_controller.combo+=1;

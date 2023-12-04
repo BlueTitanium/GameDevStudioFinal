@@ -79,14 +79,35 @@ function background_beat_color(){
 
 
 function spawn_powerup(){
-	//anywhere on grid from 5,5 to -5,-5
-	var grid_x = round(random_range(-5,5));
-	var grid_y = round(random_range(-5,5));
-	var _inst;
-	_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_heal_spot);
-	_inst.set_grid_pos(grid_x,grid_y);
-	_inst.can_touch = true;
-	_inst.can_move = true;
+	
+	var _powerups_allowed = global.powerups_allowed;
+	var _chosen = _powerups_allowed[irandom(array_length(_powerups_allowed)-1)];
+	
+	switch(_chosen){
+		case 0://heal
+			//anywhere on grid from 5,5 to -5,-5
+			var grid_x = round(random_range(-5,5));
+			var grid_y = round(random_range(-5,5));
+			var _inst;
+			_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_heal_spot);
+			_inst.set_grid_pos(grid_x,grid_y);
+			_inst.can_touch = true;
+			_inst.can_move = true;
+			break;
+		case 1://x2
+			//anywhere on grid from 5,5 to -5,-5
+			var grid_x = round(random_range(-5,5));
+			var grid_y = round(random_range(-5,5));
+			var _inst;
+			_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_x2);
+			_inst.set_grid_pos(grid_x,grid_y);
+			_inst.can_touch = true;
+			_inst.can_move = true;
+			break;
+		default:
+			break;
+	}
+	
 }
 
 

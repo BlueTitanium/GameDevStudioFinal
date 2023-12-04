@@ -7,6 +7,7 @@ if(!started_dialog && place_meeting(x,y,obj_player_world)){
 
 if(showing_dialog) {
 	if(keyboard_check_pressed(key_next)) {
+		audio_play_sound(Gimme_Kick13,1,false,.4);
 		showing_dialog = false;
 		alpha = 0;
 		

@@ -9,7 +9,7 @@ grid_pos_y = 0;
 
 can_move = false;
 
-hp = 1;
+hp = 10;
 max_hp = hp;
 
 hp_bar_delta = 320+16;

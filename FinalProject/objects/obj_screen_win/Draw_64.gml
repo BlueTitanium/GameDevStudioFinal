@@ -22,6 +22,7 @@ if(shown){
 	draw_set_alpha(1);
 	if(alpha >.9 and keyboard_check_pressed(vk_space)){
 		global.lost = false;
+		audio_play_sound(Gimme_Clap1,1,false,.4);
 		audio_stop_all();
 		if(global.backToMenu){
 			room_goto(START);	

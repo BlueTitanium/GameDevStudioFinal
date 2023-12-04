@@ -38,15 +38,42 @@ function spawn_attack_point(){
 }
 
 function spawn_enemy_attack(attack){ //variable for attack in case multiple attack types
-	var _inst;
-	var r = 1;
-	for(var i = -r; i <=r;i++){
-		for(var j = -r; j <= r; j++){
-			_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_attack_spot_e);
-			_inst.set_grid_pos(obj_player.grid_pos_x + i, obj_player.grid_pos_y +j);
-			_inst.can_move = true;
-		}
+	switch(attack){
+		case "a": //3x3
+			var _inst;
+			var r = 1;
+			for(var i = -r; i <=r;i++){
+				for(var j = -r; j <= r; j++){
+					_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_attack_spot_e);
+					_inst.set_grid_pos(obj_player.grid_pos_x + i, obj_player.grid_pos_y +j);
+					_inst.can_move = true;
+				}
+			}
+			break;
+		case "b"://horizontal
+			var _inst;
+			var r = 4;
+			for(var i = -r; i <=r;i++){
+				_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_attack_spot_e);
+				_inst.set_grid_pos(i, obj_player.grid_pos_y);
+				_inst.decay_moves_left =3;
+				_inst.can_move = true;
+			}
+			break;
+		case "c"://vertical
+			var _inst;
+			var r = 4;
+			for(var i = -r; i <=r;i++){
+				_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_attack_spot_e);
+				_inst.set_grid_pos(obj_player.grid_pos_x, i);
+				_inst.decay_moves_left =3;
+				_inst.can_move = true;
+			}
+			break;
+		default:
+			break;
 	}
+	
 	
 }
 
