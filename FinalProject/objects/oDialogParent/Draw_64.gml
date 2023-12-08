@@ -39,13 +39,13 @@ if(showing_dialog == true) {
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
-	draw_set_font(fnt_small);
+	draw_set_font(fnt_small3);
 	draw_set_color(c_white);
-	draw_text_ext(text_x, text_y+translate_Y, current_dialog.message, 16, display_get_gui_width() - 220);
+	draw_text_ext(text_x, text_y+translate_Y, current_dialog.message, 25, display_get_gui_width() - 220);
 	
 	draw_set_halign(fa_right);
 	draw_set_valign(fa_bottom);
-	draw_set_font(fnt_small);
+	draw_set_font(fnt_small3);
 	draw_set_color(c_white);
 	draw_text( display_get_gui_width() - (border * 2), height - (border * 2) + translate_Y, "press space to continue...")
 	

@@ -12,7 +12,7 @@ can_touch = false;
 
 //set_grid_pos(1,1);
 //can_touch = true;
-decay_moves_left = 2;
+decay_moves_left = 4;
 
 col_index = 0;
 colors = [ #40ff86, #1fff44]

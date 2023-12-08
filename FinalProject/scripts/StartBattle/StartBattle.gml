@@ -14,9 +14,9 @@ function StartBattle(char_id){
 			break;
 		case 1: //tutorial 2
 			global.enemy_pattern = "011033022022044044011033";
-			global.enemy_attack_pattern = "0000000a0000000a0000000a";
+			global.enemy_attack_pattern = "00000a0000000a0000000a00";
 			global.song = noone;
-			global.bpm = 120;
+			global.bpm = 140;
 			global.enemy_hp = 50;
 			global.powerups_allowed = [0];
 			global.title = "ATTACK ON THE BEAT and AVOID THE DANGEROUS SPOTS. WIN!";
@@ -32,7 +32,7 @@ function StartBattle(char_id){
 			= "b000b000b000b000b000c000c000b000c0000000";
 			global.song = music_test_205_peritune_epicbattledeity;
 			global.bpm = 205;
-			global.enemy_hp = 150;
+			global.enemy_hp = 200;
 			global.powerups_allowed = [0,1];
 			global.title = "DEFEAT THE CHAMPION!";
 			global.enemy_portrait = spr_enemy_portrait3;

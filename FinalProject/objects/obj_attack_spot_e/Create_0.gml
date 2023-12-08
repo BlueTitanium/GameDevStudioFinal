@@ -11,8 +11,9 @@ can_touch = false;
 
 //set_grid_pos(1,1);
 //can_touch = true;
-decay_moves_left = 4;
+decay_moves_left = 6;
 danger_zone = 1;
+
 
 col_index = 0;
 colors = [ #ff9429, #fff94a, #ff2929]
@@ -26,6 +27,9 @@ function move(){
 			col_index = 2;	
 			can_touch = true;
 			image_alpha = 1;
+			if(!audio_is_playing(Gimme_Musical5)){
+				audio_play_sound(Gimme_Musical5,1,false,.4);
+			}
 		} else {
 			col_index = (col_index + 1) % 2;
 			image_alpha = .5;
@@ -33,9 +37,7 @@ function move(){
 		image_blend = colors[col_index];
 		if(decay_moves_left <= 0){
 			instance_destroy();
-			if(!audio_is_playing(Gimme_Tom7)){
-				audio_play_sound(Gimme_Tom7,1,false,.4);
-			}
+			
 		}
 	}
 }

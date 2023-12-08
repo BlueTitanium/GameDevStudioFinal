@@ -19,6 +19,9 @@ draw_set_color(#47f0ff);
 draw_rectangle(hp_bar_start+10, 560+10,hp_shown, 636-10, false);
 
 draw_set_color(c_white);
-
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
+draw_set_font(fnt_small3);
+draw_text(hp_bar_start+20,560+(636-560)/2,"PLAYER HP");
 
 

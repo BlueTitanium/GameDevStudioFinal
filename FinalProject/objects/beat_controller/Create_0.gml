@@ -43,6 +43,17 @@ if(global.song!=noone){
 //alarm[0] = delay;
 
 function hit_beat(){
+	if(reaction_time_left > reaction_timer-reaction_allowed-3
+	&& reaction_time_left < reaction_timer-reaction_allowed+3){
+		var _tInst = instance_create_layer(obj_player.x, obj_player.y, "UI", obj_text_effect);
+		_tInst.text = "PERFECT!";
+		_tInst.target_alpha = 1;
+		_tInst.col = #47f0ff;
+	} else {
+		var _tInst = instance_create_layer(obj_player.x, obj_player.y, "UI", obj_text_effect);
+		_tInst.text = "GREAT!";
+		_tInst.target_alpha = .8;
+	}
 	num_correct++;
 	num_inputs++;
 	accuracy = num_correct/num_inputs;
@@ -54,6 +65,10 @@ function miss_beat(){
 		num_inputs++;
 		accuracy = num_correct/num_inputs;
 		audio_play_sound(Gimme_Perc23,1,false,1);
+		var _tInst = instance_create_layer(obj_player.x, obj_player.y, "UI", obj_text_effect);
+		_tInst.text = "MISS!";
+		_tInst.target_alpha = .6;
+		_tInst.col = #ff4d40;
 		combo = 1;
 	}
 }

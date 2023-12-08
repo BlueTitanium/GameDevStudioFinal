@@ -4,12 +4,12 @@
 event_inherited();
 
 //dialog.add(spr_player_portrait, "Hello");
-dialog.add(spr_enemy_portrait, "Huh? You want to challenge me to a dance battle?");
-dialog.add(spr_enemy_portrait, "Haha! You don't even seem to know the rules to the dance floor yet!");
-dialog.add(spr_enemy_portrait, "Let me teach you!");
-dialog.add(spr_enemy_portrait, "You can either use WASD or arrows to make each move.");
-dialog.add(spr_enemy_portrait, "Approach the green circle to launch an attack.");
-dialog.add(spr_enemy_portrait, "But remember to move on the beat! The movement window is when you see the beat indicators at the bottom of your screen reach the center, and turn blue.");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: Huh? You want to challenge me to a dance battle?");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: Haha! You don't even seem to know the rules to the dance floor yet!");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: Let me teach you!");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: You can either use WASD or arrows to make each move.");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: Approach the green circle to launch an attack.");
+dialog.add(spr_enemy_portrait, "Enemy Sunglasser: But remember to move on the beat! The movement window is when you see the beat indicators at the bottom of your screen reach the center, and turn blue.");
 //dialog.add(spr_Character_Blue, "Today it has been snowing a lot hasn't it?");
 
 

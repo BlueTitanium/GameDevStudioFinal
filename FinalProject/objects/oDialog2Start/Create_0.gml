@@ -4,9 +4,9 @@
 event_inherited();
 
 //dialog.add(spr_player_portrait, "Hello");
-dialog.add(spr_enemy_portrait3, "Wait, are you saying you aim to be the top dancer here?");
-dialog.add(spr_enemy_portrait3, "Well then, you'll have to defeat me on the dance floor before claiming the title!");
-dialog.add(spr_enemy_portrait3, "Let's not waste time!");
+dialog.add(spr_enemy_portrait3, "The Champion: Wait, are you saying you aim to be the top dancer here?");
+dialog.add(spr_enemy_portrait3, "The Champion: Well then, you'll have to defeat me on the dance floor before claiming the title!");
+dialog.add(spr_enemy_portrait3, "The Champion: Let's not waste time!");
 //dialog.add(spr_Character_Blue, "Today it has been snowing a lot hasn't it?");
 
 
