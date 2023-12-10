@@ -8,11 +8,22 @@ cutscenes = [spr_start_cutscene1,
 			spr_start_cutscene5,
 			spr_start_cutscene6]
 
+end_cutscenes = [spr_end_cutscene1,
+			spr_end_cutscene2,
+			spr_end_cutscene3,
+			spr_end_cutscene4,
+			spr_end_cutscene5,
+			spr_end_cutscene6]
+
 orig = [x,y];
 
-x=-650;
+x=-1280;
 
-sprite_index = cutscenes[step-1];
+if(start){
+	sprite_index = cutscenes[step-1];
+} else {
+	sprite_index = end_cutscenes[step-1];
+}
 
 
 

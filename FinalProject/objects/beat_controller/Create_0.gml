@@ -23,10 +23,10 @@ combo = 1;
 cur_index = 0; // to spawn
 cur_beat = " "; // to hit
 
-reaction_timer   = 17;
+reaction_timer   = 20;
 reaction_allowed = 12;
 if(beat_timer > 30){
-	reaction_timer = beat_timer/2 + 2; //17
+	reaction_timer = beat_timer *2/3; //20
 	reaction_allowed=reaction_timer-floor(beat_timer/6); //17 - 30/6 = 12
 }
 

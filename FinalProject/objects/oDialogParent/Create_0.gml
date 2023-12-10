@@ -2,6 +2,7 @@
 
 dialog = new Dialogue();
 dia_id = 0;
+owner = noone;
 
 key_next = vk_space;
 

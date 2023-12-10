@@ -70,6 +70,20 @@ function spawn_enemy_attack(attack){ //variable for attack in case multiple atta
 				_inst.can_move = true;
 			}
 			break;
+		case "z"://all
+			var _inst;
+			var r = 4;
+			for(var i = -r; i <=r;i++){
+				for(var j = -r; j <= r; j++){
+					_inst = instance_create_layer(-1000,-1000,"Above_tile",obj_attack_spot);
+					_inst.set_grid_pos(i, j);
+					_inst.can_touch = true;
+					_inst.can_move = true;
+					_inst.image_alpha = .25;
+					_inst.decay_moves_left =5;
+				}
+			}
+			break;
 		default:
 			break;
 	}

@@ -8,8 +8,7 @@ dialogue_obj = noone;
 
 if(global.should_dia[dia_id][1]){ //end
 	if(global.lost = false){
-		dialogue_obj = instance_create_layer(x,y,"Instances",oDialog2Win);
-		dialogue_obj.dia_id = dia_id;
+		room_goto(EndCutscene);
 	} else {
 		dialogue_obj = instance_create_layer(x,y,"Instances",oDialog2Lose);
 		dialogue_obj.dia_id = dia_id;	

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_enemy2",
+    "path": "sprites/spr_enemy2/spr_enemy2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -25,7 +25,9 @@ function move(){
 		image_blend = colors[col_index];
 		if(decay_moves_left <= 0){
 			instance_destroy();	
-			audio_play_sound(Gimme_Kick13,1,false,.4);
+			if(!audio_is_playing(Gimme_Kick13)){
+				audio_play_sound(Gimme_Kick13,1,false,.4);
+			}
 		}
 	}
 }
